@@ -12,7 +12,7 @@ function highlightCups(idx) {
     //     idx--
     // }
     //these two things so the same thing! Just fancier way of writing it I guess
-    //checking if the one I'm clicking is full and the next one is empty, then decrease full by one
+    //checking if the one I'm clicking is full and the next one is empty, then toggle the one i just clicked on
     if(smallCups[idx].classList.contains('full') && !smallCups[idx].nextElementSibling.classList.contains('full')) {
         idx--
     }
